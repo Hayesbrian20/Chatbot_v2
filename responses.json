@@ -1,0 +1,11 @@
+{
+    "greetings": {
+        "hello": "Hi there! How can I assist you?",
+        "hi": "Hello! What do you need help with?"
+    },
+    "farewell": {
+        "bye": "Goodbye! Have a great day!",
+        "see you": "See you next time!"
+    },
+    "default": "I'm not sure how to respond to that."
+}
