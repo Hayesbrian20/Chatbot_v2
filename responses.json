@@ -9,6 +9,8 @@
     },
     
     "small_talk": {
+        "homework": "I'm here to help you with your questions, not your homework!",
+        "can you help with my homework": "No, I haven't even finished mine yet",
         "how are you": "I'm just a chatbot, but I'm here and ready to help!",
         "what's up": "Not much, just helping people with IT solutions. How about you?",
         "who are you": "I'm the AI assistant for Hayes Solutions. How can I assist you?",
@@ -24,6 +26,7 @@
     },
 
     "services": {
+        "what can you do": "We offer AI chatbots, IT consulting, cloud solutions, cybersecurity, and custom software development.",
         "do you offer ai chatbots": "Yes! We specialize in building custom AI chatbots for businesses.",
         "can i have one?": "Of course! We can create a custom AI chatbot tailored to your business needs.",
         "what is it consulting": "IT consulting involves providing expert advice and solutions to improve your IT infrastructure and operations.",
@@ -32,6 +35,7 @@
     },
 
     "ai_chatbot_info": {
+        "help": "I'm here to help you with any questions you have. What do you need assistance with? We can help you with Pricing for Chatbots, Technical Support or even give you contact information for Customer Support.",
         "how do ai chatbots work": "AI chatbots process user inputs, analyze data, and provide automated responses based on predefined rules or AI learning models.",
         "can i customize the chatbot": "Yes! You can fully customize our AI chatbots to match your business needs and branding.",
         "do you provide chatbot integration": "Yes, we integrate AI chatbots with websites, CRMs, helpdesks, and more."
@@ -46,6 +50,7 @@
     "sales_pricing": {
         "how much does a chatbot cost": "Pricing depends on features and complexity. We offer basic, standard, and enterprise plans.",
         "how much?": "Our pricing varies based on the features and customization you require. Contact our sales team for a quote.",
+        "pricing for chatbots": "We offer flexible pricing plans for chatbots based on your business needs and requirements.",
         "do you offer free trials": "Yes! We provide a 14-day free trial for our chatbot services.",
         "how do i purchase a chatbot": "You can purchase a chatbot by contacting our sales team or signing up on our website."
     },
@@ -53,7 +58,7 @@
     "it_solutions": {
         "do you offer cybersecurity services": "Yes! We offer cybersecurity solutions, including penetration testing and risk assessments.",
         "do you provide custom software development": "Absolutely! We build custom software tailored to your business needs.",
-        "can you help with cloud migration": "Yes, we specialize in cloud migrations to AWS, Azure, and Google Cloud."
+        "can you cloud migration": "Yes, we specialize in cloud migrations to AWS, Azure, and Google Cloud."
     },
 
     "customer_support": {
