@@ -14,16 +14,37 @@ export default class Chatbot {
     }
 
     getResponse(input) {
-        input = input.toLowerCase();
+        input = input.toLowerCase().trim(); // Normalize user input
+        let bestMatch = { phrase: null, score: 0 };
+        let matchedResponse = this.responses.default || "I'm not sure how to respond to that.";
+
+        // Ensure stringSimilarity is loaded from the CDN
+        if (typeof window.stringSimilarity === 'undefined') {
+            console.error("stringSimilarity library not found. Make sure to load it in index.html.");
+            return matchedResponse;
+        }
+
+        // Flatten responses into a searchable format
+        let phraseList = [];
+        let phraseMapping = {};
 
         for (const category in this.responses) {
-            for (const key in this.responses[category]) {
-                if (input.includes(key)) {
-                    return this.responses[category][key];
-                }
+            for (const phrase in this.responses[category]) {
+                phraseList.push(phrase);
+                phraseMapping[phrase] = this.responses[category][phrase];
             }
         }
 
-        return this.responses.default || "I don't have a response for that.";
+        // Find the closest match using fuzzy logic
+        const matches = window.stringSimilarity.findBestMatch(input, phraseList);
+        const bestPhrase = matches.bestMatch.target;
+        const bestScore = matches.bestMatch.rating;
+
+        // Set response if confidence score is high enough
+        if (bestScore > 0.5) { // Threshold to determine a "good match"
+            matchedResponse = phraseMapping[bestPhrase];
+        }
+
+        return matchedResponse;
     }
 }
